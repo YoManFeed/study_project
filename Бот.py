@@ -1,3 +1,6 @@
+# Программа bot.py парсит сайт школы, ищет расписание и отправляет его в вк. Но бот уже не актуален, тк сайт был переписан 
+# и нужно корректировать парсер.
+
 import vk_api, json
 from vk_api.longpoll import VkLongPoll, VkEventType
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
@@ -10,7 +13,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-vk_session = vk_api.VkApi(token='5dd42713ad38fae2ebe6382d7d4004220a481beaae995e4f589e3d9d341b9bdffe0b08c6f0eba82e73987')
+vk_session = vk_api.VkApi(token='         ')
 session_api = vk_session.get_api()
 longpoll = VkLongPoll(vk_session)
 
